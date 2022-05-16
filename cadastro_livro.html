@@ -12,11 +12,7 @@
 <body>
   <!--Header-->
   <header class="cabecalho">
-    <img class="logo" src="vetor.png" alt="Logo do site">
-    <nav class="navbar">
-      <a class="item">Cadastro</a>
-      <a class="item">Livros</a>
-    </nav>
+    <img class="logo" src="logo2.png" alt="Logo do site">
   </header>
 
 
@@ -30,33 +26,35 @@
     <form action="" method="post">
       <fieldset class="grupo">
         <div class="campo">
-          <label for="nome_livro">Nome do Livro</label>
-          <input type="text" name="nome_livro">
+          <label for="nome_livro">Nome do Livro:</label>
+          <input type="text" name="nome_livro" class="inputUser" required>
         </div>
         <div class="campo">
-          <label for="nome_autor">Nome do Autor</label>
-          <input type="text" name="nome_autor">
+          <label for="nome_autor">Nome do Autor:</label>
+          <input type="text" name="nome_autor" class="inputUser" required>
         </div>
         <div class="campo">
-          <label for="ano_lancamento">Ano de Lançamento</label>
-          <input type="number" name="ano_lancamento">
+          <label for="ano_lancamento">Ano de Lançamento:</label>
+          <input type="number" name="ano_lancamento" class="inputUser" required>
         </div>
         <div class="campo">
-          <label for="numero_id">Número de Identificação</label>
-          <input type="number" name="numero_id">
+          <label for="numero_id">Número de Identificação:</label>
+          <input type="number" name="numero_id" class="inputUser" required>
         </div>
         <div class="campo">
-          <label for="editora_publicacao">Editora de Publicação</label>
-          <input type="text" name="editora_publicacao">
+          <label for="editora_publicacao">Editora de Publicação:</label>
+          <input type="text" name="editora_publicacao"class="inputUser" required>
         </div>
         <div class="campo">
-          <label>Categoria do Livro</label>
+          <label>Categoria do Livro:</label>
           <select id="categoria">
             <option selected disabled value="">Selecione uma opção</option>
             <option>Romance</option>
             <option>Terror</option>
             <option>Crimes reais</option>
             <option>Sobrenatural</option>
+            <option>Ficção Científica</option>
+            <option>Educação Infantil</option>
           </select>
         </div>
       </fieldset>
